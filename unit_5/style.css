@@ -90,6 +90,7 @@ color: #34495e;
     float: left;
     padding: 10px;
     position: relative;
+
 }
 .portfolio-item figcaption{
 position: absolute;
@@ -103,6 +104,9 @@ transition: opacity 300ms;
 display:flex;
 justify-content: center;
 align-items:center;
+font-family: 'Titillium Web-black', sans-serif;
+color: #f2f2f2;
+font-size: 20px
 }
 
 .portfolio-item:hover figcaption{
@@ -135,6 +139,7 @@ align-items:center;
     font-family: 'Titillium Web-black', sans-serif;
     color: #0fb9d2;
 }
+
 #footer
 {
    margin-top: 100px;
@@ -144,8 +149,8 @@ align-items:center;
    padding-right: 100px; 
    height: 40px;
    font-family: 'Titillium Web-black', sans-serif;
-text-align: center;
-color: #f2f2f2;
- font-size: 15px;
+   text-align: center;
+   color: #f2f2f2;
+   font-size: 15px;
    padding: 10px;
 }
