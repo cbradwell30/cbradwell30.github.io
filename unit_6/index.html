@@ -2,7 +2,12 @@
 <html>
 <head>
 	<title>Cornelia Faleski Designs</title>
+	<link href="https://fonts.googleapis.com/css?family=Merriweather|Titillium+Web:300,400,600,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="jquery.fancybox.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="jquery.fancybox.js"></script>
+
 </head>
 <body>
 <header id="logo"> <h3>Cornelia Faleski Design (logo)</h3>
@@ -25,8 +30,8 @@
 		<h2>Portfolio</h2></section>
 
 <section class="clearfloat">
-<a class="portfolio-item" href=""><img src="images/heartsmallcolor.jpg"><figcaption>Heart Center Brochure</figcaption></a>
-<a class="portfolio-item" href=""><img src="images/jdrfsmall_color.jpg"><figcaption>Annual Conference<br>Brochure</figcaption></a>
+<a data-caption="Copy Here."data-fancybox="gallery" class="portfolio-item" href="images/heartsmallcolor.jpg"><img src="images/heartsmallcolor.jpg"><figcaption>Heart Center Brochure</figcaption></a>
+<a data-fancybox="gallery" class="portfolio-item" href="images/heartsmallcolor.jpg"><img src="images/jdrfsmall_color.jpg"><figcaption>Annual Conference<br>Brochure</figcaption></a>
 <a class="portfolio-item" href=""><img src="images/ridesmallcolor.jpg"><figcaption>Campaigns</figcaption></a>
 <a class="portfolio-item" href=""><img src="images/advocacysmallcolor.jpg"><figcaption>Direct Mail</figcaption></a>
 <a class="portfolio-item" href=""><img src="images/njmonthlysmallcolor.jpg"><figcaption>Direct Mail</figcaption></a>
@@ -54,5 +59,14 @@
 <footer id="footer">
 		Cornelia Faleski Design 2018. Contact: Linked(Icon)
 	</footer>
+	<script type="text/javascript">
+		// A $( document ).ready() block.
+$(document).ready(function() {
+    console.log( "ready!" );
+    $('[data-fancybox="gallery"]').fancybox({
+	// Options will go here
+});
+});
+	</script>
 </body>
 </html>
