@@ -1,7 +1,7 @@
 div {
 width: 100%;
 }
-
+body{font-family: 'Merriweather', serif;}
 
 
 *{margin: 0px;
@@ -28,10 +28,11 @@ width: 100%;
     float: right;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 12px;
     text-decoration: none;
     font-size: 15px;
     font-family: helvetica, Sans-Serif;
+    margin-right: 20px;
 }
 
 
@@ -69,11 +70,18 @@ font-family: 'Titillium Web', sans-serif;
 color: #f16729;
 }
 
+h3 {
+font-size: 25px;
+text-align: left;
+font-family: 'Titillium Web', sans-serif;
+color: #f16729;
+}
+
 h4 {
 font-size: 22px;
 text-align: left;
 font-family: 'Titillium Web', sans-serif;
- color: #85929E;
+color: #34495e;
 margin-top: 20px;
 }
 
@@ -88,14 +96,19 @@ margin-top: 10px;
 p {font-size: 22px;
 text-align: left;
 font-family: 'Merriweather', serif;
-line-height: 1.25em;
+line-height: 1.5em;
 color: #34495e;
 }
 
-#logo h3{
-    margin-top: 120px;
-    margin-left: 100px;
+.logo{
+width:auto;
+height:auto;
+display: inline-block;
+position: relative; 
+margin-top: 30px;
+margin-left: 80px;
 }
+
 
 #portfolio-header h2
 {margin-top: 220px;
@@ -145,17 +158,24 @@ font-size: 16px
 
 
 .column {
-    float: left;
-    width: 50%;
-    height: auto;
+    /*float: left;*/
+    width: 100%;
+    /*height: auto;*/
     padding: 20px;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.subcolumn{
+  float: left;
+  width: 33.33%;
+
 }
 
 #exper-header h2{
     font-family: 'Titillium Web', sans-serif;
     font-size: 30px;
-    color: #34495e;
+    color: #f16729;
     text-align: left;
 }
 
@@ -164,6 +184,7 @@ font-size: 16px
     font-size: 18px;
     color: #000;
     margin-top: 10px;
+    text-align: left;
 }
 
 #exper-paragraph{
@@ -171,17 +192,18 @@ font-size: 16px
     font-size: 16px;
     color: #000;
     margin-bottom: 5px;
+
 }
 
 #exper-paragraph ul{
     margin-left: 30px;
     margin-top: 10px;
     padding: 0px;
+    margin-bottom: 10px;
 
 }
 
-#column1 {
-  background-color: #fff;
+/*#column1 {
   font-family: 'Titillium Web', sans-serif;
   font-size: 14px;
 
@@ -189,36 +211,46 @@ font-size: 16px
 
 #column2 {
   background-color: #fff;
-}
+}*/
 
 
 
 #footer
 {
    margin-top: 100px;
-   margin-bottom: 30px;   
+   margin-bottom: 0px;   
    background-color: #34495e;
    padding-left: 100px;
    padding-right: 100px; 
-   height: 40px;
+   height: 80px;
    font-family: 'Titillium Web', sans-serif;
    text-align: center;
    color: #f2f2f2;
-   font-size: 15px;
+   font-size: 20px;
    padding: 10px;
 }
 
-@media screen and (max-width: 1024px){
-  body {font-size: 12px;}
-  .portfolio-item {width: 25%;}
-  .section-headers { width: 100%; }
+.linkedinlogo{
+width:120px;
+height:auto;
+display: inline-block;
+position: relative; 
+top: 5px;
+}
 
+@media screen and (max-width: 1024px){
+  body {font-size: 10px;}
+  .portfolio-item {width: 25%}
+  .section-headers { width: 100% }
+  .column {width:100%}
 
 }
 
 @media screen and (max-width: 768px){
-      .portfolio-item {width: 50%;}
+      .portfolio-item {width: 50%}
       .topnav  {padding-right: 52%}
+      .logo{width: 50%}
+
 }
 
 @media screen and (max-width: 1024px){
