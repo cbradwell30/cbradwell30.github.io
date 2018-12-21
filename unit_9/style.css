@@ -22,6 +22,7 @@ body{font-family: 'Merriweather', serif;}
 .topnav {
     background-color: #34495e;
     overflow: hidden;
+    z-index: 3!important;
 }
 
 .topnav a {
@@ -55,6 +56,10 @@ display: block;
 width: 100%;
 }
 
+ul{
+  list-style-position: inside;
+}
+
 .section-headers
 {margin-top: 150px;
     font-size: 20vw;
@@ -77,6 +82,14 @@ font-family: 'Titillium Web', sans-serif;
 color: #f16729;
 }
 
+#artcopy{
+font-size: 40px;
+text-align: center;
+font-family: 'Titillium Web', sans-serif;
+color: #f16729;
+
+}
+
 h4 {
 font-size: 22px;
 text-align: left;
@@ -91,6 +104,14 @@ text-align: left;
 font-family: 'Titillium Web', sans-serif;
  color: #85929E;
 margin-top: 10px;
+}
+
+h6 {
+font-size: 20px;
+text-align: center;
+font-family: 'Titillium Web', sans-serif;
+color: #f16729;
+
 }
 
 p {font-size: 22px;
@@ -195,8 +216,7 @@ font-size: 16px
 
 }
 
-#exper-paragraph ul{
-    margin-left: 30px;
+.exper-paragraph ul{
     margin-top: 10px;
     padding: 0px;
     margin-bottom: 10px;
@@ -239,7 +259,7 @@ top: 5px;
 }
 
 @media screen and (max-width: 1024px){
-  body {font-size: 10px;}
+  /*body {font-size: 10px;}*/
   .portfolio-item {width: 25%}
   .section-headers { width: 100% }
   .column {width:100%}

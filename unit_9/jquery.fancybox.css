@@ -93,7 +93,10 @@ body.compensate-for-scrollbar {
 
 .fancybox-toolbar {
   right: 0;
-  top: 0; }
+  top: 0; 
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;}
 
 .fancybox-stage {
   direction: ltr;
